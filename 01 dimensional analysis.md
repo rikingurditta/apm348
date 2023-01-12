@@ -41,13 +41,16 @@ $$
 This model has 2 variables, $m$ and $t$, and 2 parameters, $k$ and $m_0$.
 
 Considering dimensions,
+
 $$
 \begin{align*}
 \brackets{\frac{dm}{dt}} = \frac{M}{T} \\
 [km] = [k]M \rightarrow [k] = \frac{1}{T}
 \end{align*}
 $$
+
 Then $\tau = kt$ and $\ds \mbar(\tau) = \frac{m}{m_0}$ are non-dimensional time and mass.
+
 $$
 \begin{align*}
 -km &= \frac{dm}{dt} \\
@@ -59,6 +62,7 @@ $$
 \mbar(0) &= \frac{m(0)}{m_0} = 1
 \end{align*}
 $$
+
 So our model can now be written with two variables, $\mbar$ and $\tau$, and 0 parameters.
 
 ### Buckingham Pi Theorem
@@ -81,6 +85,7 @@ The dimensionless variables $\Pi_1, ..., \Pi_{N-r}$ have some relationship $F(\P
   - $\ds [g] = LT^{-2}$
 
 Using these, we can construct the dimensional matrix by considering how each variable has each dimension:
+
 $$
 \begin{align*}
 &\quad\begin{matrix}
@@ -97,6 +102,7 @@ D =
 \end{pmatrix}
 \end{align*}
 $$
+
 $D$ has rank $r=3$, so using the Buckingham Pi Theorem we can model this problem with $N-r = 2$ dimensionless variables
 
 Our first one can be $\Pi_1 = \theta$, which corresponds to the vector $(0, 0, 0, 0, 1)$ in the null space of $D$
@@ -104,6 +110,7 @@ Our first one can be $\Pi_1 = \theta$, which corresponds to the vector $(0, 0, 0
 Another vector in the null space is $(2, 0, -1, 1, 0)$, so this shows us that our second one can be $\ds \Pi_2 = \frac{p^2 g}{\ell}$
 
 Modelling the relationship,
+
 $$
 \begin{align*}
 F(\Pi_1, \Pi_2) = 0 \rightarrow \Pi_2 &= f(\Pi_1) \\
@@ -111,6 +118,7 @@ F(\Pi_1, \Pi_2) = 0 \rightarrow \Pi_2 &= f(\Pi_1) \\
 ...
 \end{align*}
 $$
+
 This already shows us that mass is not relevant to the model!
 
 #### Example: Flow past a sphere
@@ -127,10 +135,11 @@ This already shows us that mass is not relevant to the model!
   - $[F] = MLT^{-2}$
 
 Making the dimensional matrix,
+
 $$
 \begin{align*}
 &\quad\ \begin{matrix}
-\small F & \ \ \;\small v & \ \ \;\small \mu & \ \ \;\small \rho & \;\small D
+\small F & \ \ \small v & \ \ \small \mu & \ \ \small \rho & \ \ \small D
 \end{matrix}\\
 D = 
 \begin{matrix}
@@ -143,4 +152,5 @@ D =
 \end{pmatrix}
 \end{align*}
 $$
+
 This has rank $3$ so just as in the last example it can be modelled with two variables.
