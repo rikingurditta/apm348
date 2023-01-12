@@ -1,6 +1,6 @@
-# APM348 - Intro to Mathematical Modeling
+# APM348 - Mathematical Modeling
 
-Winter 2023 session, taught by [Adam Stitchcombe] (PUT IN URL LATER).
+Winter 2023 session, taught by [Adam Stinchcombe](https://www.math.toronto.edu/cms/people/faculty/stinchcombe-adam/).
 
 ## Table of Contents
 
